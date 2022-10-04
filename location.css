@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  padding: 5px 0;
+  color: white;
+}
+
+nav .logo {
+  font-family: "Prompt", sans-serif;
+  letter-spacing: 3px;
+  font-size: 40px;
+}
+
+nav .gambar {
+  width: 200px;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+  font-family: "Prompt", sans-serif;
+}
+
+nav ul li .dropdown {
+  display: none;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+  background: black;
+  position: absolute;
+  padding: 15px;
+  width: 102px;
+}
+
+nav ul li a:hover {
+  border-radius: 5px;
+  color: #ff5b5b;
+  background: #222;
+  box-shadow: 0 0 10px #ff5b5b;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  padding: 25px;
+  position: relative;
+}
+
+.menu input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.section-atas {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    top: 0;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333333;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .section-atas {
+    display: block;
+  }
+
+  .jkt-atas {
+    width: 350px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .bdg-atas {
+    width: 350px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 10px;
+  }
+
+  .bali-atas {
+    width: 350px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 10px;
+  }
+
+  .section-atas h1 {
+    font-family: "Prompt", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .section-atas p {
+    font-family: "Prompt", sans-serif;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  table {
+    display: none;
+  }
+}
+
+.content {
+  background-image: url(Assets/background.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content h4 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Prompt", sans-serif;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+.map-jkt {
+  display: block;
+  border-radius: 2px;
+  border-color: white;
+  margin-right: 30px;
+  padding-left: 20px;
+  border: 2px;
+  width: 350px;
+}
+
+.djkt {
+  font-family: "Prompt", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  padding-top: 20px;
+}
+.alamat {
+  padding-right: 300px;
+  padding-bottom: 170px;
+  font-family: "Prompt", sans-serif;
+  color: white;
+}
+
+.map-bdg {
+  display: block;
+  border-radius: 2px;
+  border-color: white;
+  margin-right: 30px;
+  padding-left: 20px;
+  border: 2px;
+  width: 350px;
+  padding-bottom: 30px;
+}
+
+.dbdg {
+  font-family: "Prompt", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  padding-top: 20px;
+}
+.alamat-bdg {
+  padding-right: 300px;
+  padding-bottom: 220px;
+  font-family: "Prompt", sans-serif;
+  color: white;
+}
+
+.map-bali {
+  display: block;
+  border-radius: 2px;
+  border-color: white;
+  margin-right: 30px;
+  padding-left: 20px;
+  border: 2px;
+  width: 350px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.dbali {
+  font-family: "Prompt", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.alamat-bali {
+  padding-right: 300px;
+  padding-bottom: 200px;
+  font-family: "Prompt", sans-serif;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  height: 60px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+.email {
+  width: 30px;
+}
